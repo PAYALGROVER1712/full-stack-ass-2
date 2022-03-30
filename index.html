@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Hello, world!</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+.fs_16 {
+    font-size: 16px;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw_500 {
+    font-weight: 500;
+}
+.fw_600 {
+    font-weight: 600;
+}
+.fw_700 {
+    font-weight: 700;
+}
+.para {
+    font-size: 16px;
+    font-weight: 400;
+}
+.login-btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: unset;
+    border: unset;
+}
+.login-btn:hover {
+    color: red;
+}
+.create-account-btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: unset;
+    border: 1px solid white;
+    padding: 11px 14px;
+}
+.create-account-btn:hover {
+    border-color: red;
+    color: red;
+}
+.fs_36 {
+    font-size: 36px;
+}
+.please_location {
+    padding: 18px 23px;
+}
+.please_location_2 {
+    padding: 18px 23px;
+    background-color: white;
+}
+.please_location_2 input {
+    border: unset;
+}
+.searches {
+    font-size: 30px;
+    font-weight: 700;
+    color: #192f60;
+}
+.discover {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8c96ab;
+}
+.card-width {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.card-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+@media (min-width: 576px) {
+    .please_location_2 {
+        width: 460px;
+    }
+    .card-width {
+        width: 360px;
+        display: flex;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .food-img-width {
+        width: 160px;
+        height: 160px;
+    }
+}
+@media (max-width: 576px) {
+    .card-width img {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .card-width {
+        width: 250px;
+    }
+    .heading {
+        font-size: 25px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5 d-flex justify-content-end">
+                    <div>
+                        <button class="login-btn me-3"> Login</button>
+                        <button class="create-account-btn">
+                            Create an account
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div>
+                        <p class="fs_36 fw_600 text-white heading text-center">
+                            Find the best restaurants, cafés, and bars
+                        </p>
+                        <div class="d-flex justify-content-center  mt-5">
+                            <div class="d-lg-flex">
+                                <div class="d-flex justify-content-center">
+                                    <input class="please_location me-4" type="text"
+                                        placeholder="Please type a location">
+
+                                </div>
+                                <div class="please_location_2 mt-4 mt-lg-0 d-flex">
+                                    <span class="me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#74819E"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                        </svg>
+                                    </span>
+                                    <input class="w-100" type="text" placeholder="Search for restaurants">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-10 ">
+                    <p class="searches">
+                        Quick Searches
+                    </p>
+                    <p class="discover">
+                        Discover restaurants by type of meal
+                    </p>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-start justify-content-start">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://th.bing.com/th/id/OIP.yKQk9g_aAXTapuB418bgKQHaD4?w=307&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Breakfast
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-center justify-content-start mt-5 mt-lg-0">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://th.bing.com/th/id/OIP.acuuG7cTvQq8RgzBcgVe6AHaE8?pid=ImgDet&rs=1" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Lunch
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-end justify-content-start mt-5 mt-xl-0">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://rippedjeansandbifocals.com/wp-content/uploads/2017/09/Turkey-Feed-Snack-Mix1-e1506447948772.jpg" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Snacks
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-start justify-content-start">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://www.bing.com/th?id=OIP.bGJ9Fv_pg3wEVmsIDodOjAHaGM&w=273&h=228&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Dinner
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-center justify-content-start mt-5 mt-lg-0">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://static.ffx.io/images/$zoom_0.552%2C$multiply_0.3541%2C$ratio_1.776846%2C$width_1059%2C$x_0%2C$y_80/t_crop_custom/q_86%2Cf_auto/b9e2f4b1bfcf719323754ea16c9bc3f6f6327469" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Drinks
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 d-flex justify-content-end justify-content-start mt-5 mt-xl-0">
+                    <section class="card-width">
+                        <img class="food-img-width" src="https://th.bing.com/th/id/OIP.WyIEGZQs9xsHvucJ3RrWegEsDJ?pid=ImgDet&rs=1" alt="">
+                        <div class="py-4 px-4">
+                            <p class="card-heading">
+                                Nightlife
+                            </p>
+                            <p class="para">
+                                Start your day with exclusive breakfast options
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
